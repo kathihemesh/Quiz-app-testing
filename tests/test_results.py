@@ -14,7 +14,7 @@ def complete_quiz_and_go_to_results(driver, track_score=False):
     quiz_page = QuizPage(driver)
     correct_count = 0
     for i in range(10):
-        quiz_page.click_option(1)
+        quiz_page.click_option(2)
         time.sleep(0.5)
         if track_score:
             feedback = quiz_page.get_feedback()  # Should return feedback text

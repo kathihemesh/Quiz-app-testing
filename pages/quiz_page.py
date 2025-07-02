@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-class QuizPage():
+class QuizPage:
     quizsection = "#quizSection"
     options = ".options"
     next_button = "#nextButton"
@@ -19,9 +19,10 @@ class QuizPage():
         return self.driver.find_elements(By.CSS_SELECTOR,self.options)
 
     def click_next(self):
-        WebDriverWait(self.driver, 10).until(
+        button = WebDriverWait(self.driver, 15).until(
             EC.element_to_be_clickable((By.CSS_SELECTOR, self.next_button))
-        ).click()
+        )
+        button.click()
     def click_option(self, n):
         options = self.get_options()
         options[n].click()
