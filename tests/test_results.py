@@ -28,22 +28,24 @@ def complete_quiz_and_go_to_results(driver, track_score=False):
     return results_page
 
 def test_retry_quiz(driver):
-    results_page = complete_quiz_and_go_to_results(driver)
+    results_page, correct_count = complete_quiz_and_go_to_results(driver, track_score=True)
     time.sleep(2)
+    # Check high score matches correct answers
+    results_page=ResultsPage(driver)
+    high_score = results_page.get_final_score()
+    assert high_score == str(correct_count), f"High score ({high_score}) does not match correct answers ({correct_count}) after quiz."
     results_page.click_retry()
     quiz_page = QuizPage(driver)
     assert quiz_page.get_quiz_section().is_displayed(), "Quiz section is not displayed after retrying quiz"
 
 def test_home_button(driver):
-    results_page = complete_quiz_and_go_to_results(driver)
+    results_page, correct_count = complete_quiz_and_go_to_results(driver, track_score=True)
     time.sleep(2)
+    # Check high score matches correct answers
+    results_page=ResultsPage(driver)
+    high_score = results_page.get_final_score()
+    assert high_score == str(correct_count), f"High score ({high_score}) does not match correct answers ({correct_count}) after quiz."
     results_page.click_home()
     time.sleep(2)
     home_page = home(driver)
     assert home_page.get_heading().is_displayed(), "Home heading is not displayed after clicking home button"
-
-def test_score_matches_correct_count(driver):
-    results_page, correct_count = complete_quiz_and_go_to_results(driver, track_score=True)
-    time.sleep(2)
-    final_score = results_page.get_final_score()
-    assert final_score == str(correct_count), f"Final score ({final_score}) does not match counted correct answers ({correct_count})"

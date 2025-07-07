@@ -32,3 +32,5 @@ class QuizPage:
         return self.driver.find_element(By.CSS_SELECTOR,self.question).text
     def get_feedback(self):
         return self.driver.find_element(By.CSS_SELECTOR,self.feedback).text
+    def get_correct_answer(self):
+        return self.driver.find_element(By.CSS_SELECTOR, ".bg-green-500").text

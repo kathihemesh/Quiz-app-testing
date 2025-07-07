@@ -21,3 +21,4 @@ class ResultsPage():
         ).click()
     def get_comment(self):
         return self.driver.find_element(By.ID, self.comment)
+    

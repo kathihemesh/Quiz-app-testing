@@ -26,6 +26,7 @@ class TestQuiz():
             assert quiz_page.get_feedback() == "Wrong!", "Feedback is not correct"
         time.sleep(1)
         quiz_page.click_next()
+        time.sleep(1)
         assert quiz_page.get_question() != prev_question, "Question did not change"
         time.sleep(1)
         quiz_page.click_home()
