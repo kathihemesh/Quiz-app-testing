@@ -30,12 +30,14 @@ def test_api_ui_question_and_answer_match(driver):
     # Step 3: For each question, cross-check API and UI, select 2nd option, and compare correct answers before clicking next
     for i in range(10):
         api_question = (html.unescape(api_questions[i]["question"])).strip()
-        " ".join(api_question.split())
+        api_question=" ".join(api_question.split())
         api_correct_answer = (html.unescape(api_questions[i]["correct_answer"])).strip()
         ui_question = quiz_page.get_question()
         assert api_question == ui_question, f"Mismatch: API='{api_question}' UI='{ui_question}'"
         quiz_page.click_option(1) 
+        time.sleep(0.3)
         ui_correct_answer = quiz_page.get_correct_answer()
         assert api_correct_answer == ui_correct_answer, f"Correct answer mismatch: API='{api_correct_answer}' UI='{ui_correct_answer}'"
         quiz_page.click_next()
+        time.sleep(0.3)
 
