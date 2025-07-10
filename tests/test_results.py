@@ -39,7 +39,6 @@ def test_retry_quiz(driver):
 def test_home_button(driver):
     results_page, correct_count = complete_quiz_and_go_to_results(driver)
     time.sleep(2)
-    # Check high score matches correct answers
     results_page=ResultsPage(driver)
     high_score = results_page.get_final_score()
     assert high_score == str(correct_count), f"High score ({high_score}) does not match correct answers ({correct_count}) after quiz."
