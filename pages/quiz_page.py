@@ -40,4 +40,5 @@ class QuizPage:
         return self.driver.find_element(By.CSS_SELECTOR,self.feedback).text
     
     def get_correct_answer(self):
-        return self.driver.find_element(By.CSS_SELECTOR, ".bg-green-500").text
+        correct=WebDriverWait(self.driver,5).until(EC.presence_of_element_located((By.CSS_SELECTOR,".options.bg-green-500")))
+        return correct.text
