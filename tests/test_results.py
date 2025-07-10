@@ -15,13 +15,13 @@ def complete_quiz_and_go_to_results(driver):
     correct_count = 0
     for i in range(10):
         quiz_page.click_option(2)
-        time.sleep(0.5)
+        time.sleep(0.3)
         
         feedback = quiz_page.get_feedback()
         if "correct" in feedback.lower():
             correct_count += 1
         quiz_page.click_next()
-        time.sleep(0.5)
+        time.sleep(0.3)
     results_page = ResultsPage(driver)
     return results_page, correct_count
 
