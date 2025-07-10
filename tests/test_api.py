@@ -19,6 +19,3 @@ def test_fetch_questions_success():
         assert "correct_answer" in question
         assert "incorrect_answers" in question
         assert len(question["incorrect_answers"]) == 3
-
-
-
