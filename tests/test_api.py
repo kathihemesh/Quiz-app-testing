@@ -12,7 +12,7 @@ def test_fetch_questions_success():
         "category": 9  # General Knowledge
     }
     response = requests.get(API_URL, params=params)
-    check.equal(response.status_code, 200, f"Status code is not 200, got {response.status_code}")
+    assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
     data = response.json()
     check.equal(data["response_code"], 0, f"Response code is not 0, got {data['response_code']}")
     check.equal(len(data["results"]), 10, f"Did not receive 10 results, got {len(data['results'])}")
