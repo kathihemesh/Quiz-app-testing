@@ -1,0 +1,3 @@
+[32mINFO    [0m test_results:test_results.py:14 High score (2) matches correct answers (2) after quiz.
+[32mINFO    [0m test_results:test_results.py:14 Successfully navigated to home after clicking home button
+[32mINFO    [0m test_results:test_results.py:68

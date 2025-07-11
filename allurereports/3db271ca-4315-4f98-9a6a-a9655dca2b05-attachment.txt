@@ -1,0 +1,22 @@
+[32mINFO    [0m test_quiz:test_quiz.py:15 
+
+
+Starting TestQuiz.test_ui
+[32mINFO    [0m test_quiz:test_quiz.py:17 Instantiated home page
+[32mINFO    [0m test_quiz:test_quiz.py:19 Selected category 11
+[32mINFO    [0m test_quiz:test_quiz.py:22 Selected difficulty medium
+[32mINFO    [0m test_quiz:test_quiz.py:25 Selected 20 questions
+[32mINFO    [0m test_quiz:test_quiz.py:28 Clicked start button
+[32mINFO    [0m test_quiz:test_quiz.py:31 Instantiated quiz page
+[32mINFO    [0m test_quiz:test_quiz.py:33 Fetched previous question: Which actor plays the role of the main antagonist in the 2011 movie "Tower Heist?"
+[32mINFO    [0m test_quiz:test_quiz.py:35 Checked quiz section display
+[32mINFO    [0m test_quiz:test_quiz.py:37 Clicked option 1
+[32mINFO    [0m test_quiz:test_quiz.py:40 Fetched feedback: Wrong!
+[32mINFO    [0m test_quiz:test_quiz.py:44 Clicked next button
+[32mINFO    [0m test_quiz:test_quiz.py:47 Checked question change
+[32mINFO    [0m test_quiz:test_quiz.py:50 Clicked home button
+[32mINFO    [0m test_quiz:test_quiz.py:53 Checked heading display after returning home
+[32mINFO    [0m test_quiz:test_quiz.py:54 
+
+
+End of TestQuiz.test_ui

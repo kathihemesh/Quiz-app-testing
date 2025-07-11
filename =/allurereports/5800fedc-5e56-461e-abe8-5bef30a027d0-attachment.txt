@@ -1,0 +1,7 @@
+[32mINFO    [0m test_quiz:test_quiz.py:22 QUIZ SECTION
+[32mINFO    [0m test_quiz:test_quiz.py:15 Successfully navigated to quiz section
+[32mINFO    [0m test_quiz:test_quiz.py:15 Feedback is displayed
+[32mINFO    [0m test_quiz:test_quiz.py:15 Question changed
+[1m[31mERROR   [0m test_quiz:test_quiz.py:17 Failed to navigate to home page
+error=assert False
+[32mINFO    [0m test_quiz:test_quiz.py:52

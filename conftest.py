@@ -1,6 +1,8 @@
 from selenium import webdriver
 import pytest
 from config import URL
+import logging
+
 @pytest.fixture
 def driver():
     driver=webdriver.Chrome()

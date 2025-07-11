@@ -1,0 +1,11 @@
+[32mINFO    [0m test_results:test_results.py:32 
+
+
+Starting test_retry_quiz
+[32mINFO    [0m test_results:test_results.py:37 Checking high score: 2 vs correct answers: 2
+[32mINFO    [0m test_results:test_results.py:40 Clicked retry button
+[32mINFO    [0m test_results:test_results.py:43 Checked quiz section display after retry
+[32mINFO    [0m test_results:test_results.py:44 
+
+
+End of test_retry_quiz

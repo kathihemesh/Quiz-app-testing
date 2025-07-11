@@ -1,0 +1,45 @@
+[32mINFO    [0m test_api:test_api.py:26 API RESPONSE TEST
+[32mINFO    [0m test_api:test_api.py:20 Status code is 200
+[32mINFO    [0m test_api:test_api.py:20 Response code is 0
+[32mINFO    [0m test_api:test_api.py:20 Received 10 results
+[32mINFO    [0m test_api:test_api.py:20 'question' key present
+[32mINFO    [0m test_api:test_api.py:20 'correct_answer' key present
+[32mINFO    [0m test_api:test_api.py:20 'incorrect_answers' key present
+[32mINFO    [0m test_api:test_api.py:20 3 incorrect answers present
+[32mINFO    [0m test_api:test_api.py:20 'question' key present
+[32mINFO    [0m test_api:test_api.py:20 'correct_answer' key present
+[32mINFO    [0m test_api:test_api.py:20 'incorrect_answers' key present
+[32mINFO    [0m test_api:test_api.py:20 3 incorrect answers present
+[32mINFO    [0m test_api:test_api.py:20 'question' key present
+[32mINFO    [0m test_api:test_api.py:20 'correct_answer' key present
+[32mINFO    [0m test_api:test_api.py:20 'incorrect_answers' key present
+[32mINFO    [0m test_api:test_api.py:20 3 incorrect answers present
+[32mINFO    [0m test_api:test_api.py:20 'question' key present
+[32mINFO    [0m test_api:test_api.py:20 'correct_answer' key present
+[32mINFO    [0m test_api:test_api.py:20 'incorrect_answers' key present
+[32mINFO    [0m test_api:test_api.py:20 3 incorrect answers present
+[32mINFO    [0m test_api:test_api.py:20 'question' key present
+[32mINFO    [0m test_api:test_api.py:20 'correct_answer' key present
+[32mINFO    [0m test_api:test_api.py:20 'incorrect_answers' key present
+[32mINFO    [0m test_api:test_api.py:20 3 incorrect answers present
+[32mINFO    [0m test_api:test_api.py:20 'question' key present
+[32mINFO    [0m test_api:test_api.py:20 'correct_answer' key present
+[32mINFO    [0m test_api:test_api.py:20 'incorrect_answers' key present
+[32mINFO    [0m test_api:test_api.py:20 3 incorrect answers present
+[32mINFO    [0m test_api:test_api.py:20 'question' key present
+[32mINFO    [0m test_api:test_api.py:20 'correct_answer' key present
+[32mINFO    [0m test_api:test_api.py:20 'incorrect_answers' key present
+[32mINFO    [0m test_api:test_api.py:20 3 incorrect answers present
+[32mINFO    [0m test_api:test_api.py:20 'question' key present
+[32mINFO    [0m test_api:test_api.py:20 'correct_answer' key present
+[32mINFO    [0m test_api:test_api.py:20 'incorrect_answers' key present
+[32mINFO    [0m test_api:test_api.py:20 3 incorrect answers present
+[32mINFO    [0m test_api:test_api.py:20 'question' key present
+[32mINFO    [0m test_api:test_api.py:20 'correct_answer' key present
+[32mINFO    [0m test_api:test_api.py:20 'incorrect_answers' key present
+[32mINFO    [0m test_api:test_api.py:20 3 incorrect answers present
+[32mINFO    [0m test_api:test_api.py:20 'question' key present
+[32mINFO    [0m test_api:test_api.py:20 'correct_answer' key present
+[32mINFO    [0m test_api:test_api.py:20 'incorrect_answers' key present
+[32mINFO    [0m test_api:test_api.py:20 3 incorrect answers present
+[32mINFO    [0m test_api:test_api.py:51

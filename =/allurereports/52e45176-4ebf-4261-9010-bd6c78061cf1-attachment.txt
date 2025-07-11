@@ -1,0 +1,3 @@
+[32mINFO    [0m test_results:test_results.py:40 RESULTS PAGE
+[32mINFO    [0m test_results:test_results.py:14 High score (1) matches correct answers (1) after quiz.
+[32mINFO    [0m test_results:test_results.py:14 Successfully navigated to quiz section after retrying quiz

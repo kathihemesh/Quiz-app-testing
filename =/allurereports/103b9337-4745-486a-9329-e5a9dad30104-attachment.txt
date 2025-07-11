@@ -1,0 +1,8 @@
+[32mINFO    [0m test_home:test_home.py:20 HOME PAGE
+[32mINFO    [0m test_home:test_home.py:13 Heading is displayed
+[32mINFO    [0m test_home:test_home.py:13 High Score label is displayed
+[32mINFO    [0m test_home:test_home.py:13 Category dropdown is displayed
+[32mINFO    [0m test_home:test_home.py:13 Difficulty dropdown is displayed
+[32mINFO    [0m test_home:test_home.py:13 Number of Questions dropdown is displayed
+[32mINFO    [0m test_home:test_home.py:13 Quiz section is displayed after clicking start
+[32mINFO    [0m test_home:test_home.py:31

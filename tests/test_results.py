@@ -1,9 +1,9 @@
 from selenium.webdriver.common.by import By
 import time
-import pytest
 from pages.home_page import home
 from pages.quiz_page import QuizPage
 from pages.results_page import ResultsPage
+import pytest_check as check
 
 # Helper function to complete quiz, track correct answers, and go to results page
 def complete_quiz_and_go_to_results(driver):
@@ -28,21 +28,20 @@ def complete_quiz_and_go_to_results(driver):
 def test_retry_quiz(driver):
     results_page, correct_count = complete_quiz_and_go_to_results(driver)
     time.sleep(2)
-    # Check high score matches correct answers
     results_page=ResultsPage(driver)
     high_score = results_page.get_final_score()
-    assert high_score == str(correct_count), f"High score ({high_score}) does not match correct answers ({correct_count}) after quiz."
+    check.equal(high_score, str(correct_count), f"High score ({high_score}) does not match correct answers ({correct_count}) after quiz.")
     results_page.click_retry()
     quiz_page = QuizPage(driver)
-    assert quiz_page.get_quiz_section().is_displayed(), "Quiz section is not displayed after retrying quiz"
+    check.is_true(quiz_page.get_quiz_section().is_displayed(), "Failed to navigate to quiz section after retrying quiz")
 
 def test_home_button(driver):
     results_page, correct_count = complete_quiz_and_go_to_results(driver)
     time.sleep(2)
     results_page=ResultsPage(driver)
     high_score = results_page.get_final_score()
-    assert high_score == str(correct_count), f"High score ({high_score}) does not match correct answers ({correct_count}) after quiz."
+    check.equal(high_score, str(correct_count), f"High score ({high_score}) does not match correct answers ({correct_count}) after quiz.")
     results_page.click_home()
     time.sleep(2)
     home_page = home(driver)
-    assert home_page.get_heading().is_displayed(), "Home heading is not displayed after clicking home button"
+    check.is_true(home_page.get_heading().is_displayed(), "Failed to navigate to home after clicking home button")
