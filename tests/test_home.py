@@ -6,7 +6,7 @@ import pytest_check as check
 
 
 class TestHome():
-    def test_ui(self, driver):
+    def test_home_ui(self, driver):
         home_page = home(driver)
         check.is_true(home_page.get_heading().is_displayed(), "Heading is not displayed")
         check.is_true(home_page.get_high_score().is_displayed(), "High Score label is not displayed")

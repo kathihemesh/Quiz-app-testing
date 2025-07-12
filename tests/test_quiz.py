@@ -7,7 +7,7 @@ import pytest_check as check
 
 
 class TestQuiz():
-    def test_ui(self, driver):
+    def test_quiz_ui(self, driver):
         homepage= home(driver)
         homepage.select_category("11")
         time.sleep(1)
