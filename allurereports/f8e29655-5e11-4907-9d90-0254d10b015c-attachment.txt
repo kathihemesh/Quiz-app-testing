@@ -1,1 +1,0 @@
-[32mINFO    [0m test_results:test_results.py:51

@@ -1,2 +1,0 @@
-[32mINFO    [0m test_home:test_home.py:13 HOME PAGE
-[32mINFO    [0m test_home:test_home.py:24

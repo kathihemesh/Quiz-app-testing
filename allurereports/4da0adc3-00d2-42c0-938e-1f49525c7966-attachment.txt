@@ -1,2 +1,0 @@
-[32mINFO    [0m test_api_ui_flow:test_api_ui_flow.py:20 API AND UI FLOW
-[32mINFO    [0m test_api_ui_flow:test_api_ui_flow.py:50

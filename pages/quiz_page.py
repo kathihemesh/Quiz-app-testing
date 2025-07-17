@@ -15,7 +15,7 @@ class QuizPage:
         self.driver = driver
 
     def get_quiz_section(self):
-        return self.driver.find_element(By.CSS_SELECTOR,self.quizsection)
+        return WebDriverWait(self.driver,5).until(EC.visibility_of_element_located((By.CSS_SELECTOR,self.quizsection)))
 
     def get_options(self):
         return self.driver.find_elements(By.CSS_SELECTOR,self.options)

@@ -9,7 +9,7 @@ def test_fetch_questions_success():
         "amount": 10,
         "difficulty": "easy",
         "type": "multiple",
-        "category": 9  # General Knowledge
+        "category": 9
     }
     response = requests.get(API_URL, params=params)
     assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
