@@ -14,7 +14,7 @@ class window_api_response_available:
 
 def test_api_ui_question_and_answer_match(driver):
     home_page = home(driver)
-    home_page.select_category("9")  
+    home_page.select_category("9")
     home_page.select_difficulty("easy")
     home_page.select_no_of_questions("10")
     time.sleep(3)
